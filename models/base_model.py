@@ -35,8 +35,7 @@ class BaseModel():
 
     def __str__(self):
         """the printed representation of tha base model"""
-        cl_name = self.__class__.__name__
-        return "[{}]({}) {}".format(cl_name, self.id, self.__dict__)
+        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """the updated datetime"""
